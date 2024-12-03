@@ -42,7 +42,7 @@ Avec CTRL+C il est possible d'arréter l'exécution de l'application dans votre 
 
 ### III - Investigation
 
-> :mag: Imaginez une attaque exploitant cette vulnérabilité. Réponse : Escalade de privilège
+> :mag: Imaginez une attaque exploitant cette vulnérabilité. Réponse : Reverse-Shell, insertion de virus, DDOS
 
 > :mag: Quel pourrait être le niveau de criticité de cette vulnérabilité  ? (LOW/MEDIUM/HIGH/CRITICAL) Réponse : High
 
