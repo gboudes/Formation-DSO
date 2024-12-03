@@ -35,7 +35,7 @@ python application.py
 
 7) Dans l'onglet "Upload", sélectionnez et upload le fichier "payload.yaml". 
 
-> :mag: Regardez alors votre terminal. Que constatez-vous ?
+> :mag: Regardez alors votre terminal. Que constatez-vous ? Réponse : Blacklistage du fichier car le mot 'extend' a été trouvé à l'intérieur.
 
 La commande "dir" s'est exécutée et vous pouvez voir la liste des fichiers et dossiers de votre répertoire. Cela veut donc dire que la vulnérabilité a bien été exploitée.
 Avec CTRL+C il est possible d'arréter l'exécution de l'application dans votre terminal. 
