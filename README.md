@@ -31,7 +31,7 @@ python application.py
 
 6) Allez sur le navigateur et dans la barre de navigation tapez "127.0.0.1:5000". Vous devriez tomber sur un site web d'analyse de fichier de configuration 
 
-> :mag: Inspectez le fichier payload.yml. Quelle ligne est intéressante dans ce fichier ? Que fait cette ligne ?
+> :mag: Inspectez le fichier payload.yml. Quelle ligne est intéressante dans ce fichier ? Que fait cette ligne ? Réponse : Permet de preprocess la requête qui upload le fichier.
 
 7) Dans l'onglet "Upload", sélectionnez et upload le fichier "payload.yaml". 
 
