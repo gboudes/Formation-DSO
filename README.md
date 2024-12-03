@@ -48,7 +48,7 @@ Avec CTRL+C il est possible d'arréter l'exécution de l'application dans votre 
 
 > :mag: Quel est le composant vulnérable ? Réponse : La partie upload de l'application lié à la bibliothèque pyyaml==5.3
 
-> :mag: Quel est le nom de la vulnérabilité ? Réponse : CVE-2020-1747
+> :mag: Quel est le nom de la vulnérabilité ? Réponse : CVE-2020-1747. Remarque : Dependabot (un SCA) a détecté les vulnérabilités dans la partie "Security" de github.
 
 > :mag: Quel est le niveau réel de criticité de cette vulnérabilité ? D'après vous, pourquoi a-t-elle ce niveau ? Réponse : 9.8 Critical
 
