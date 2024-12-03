@@ -56,7 +56,7 @@ Avec CTRL+C il est possible d'arréter l'exécution de l'application dans votre 
 
 > :mag: Qu'est-ce qu'une CWE ? Réponse : Common Weakness Enumeration
 
-> :mag: Quelle est la CWE liée à cette vulnérabilité ? Réponse Improper Input Validation
+> :mag: Quelle est la CWE liée à cette vulnérabilité ? Réponse Improper Input Validation (CWE 20)
 
 > :mag: Quelle est la différence entre CWE et CVE ? Réponse : CVE = Common Vulnerabilities and Exposures ; list of publicly disclosed computer security flaws and CWE : a community-developed list of common software and hardware weaknesses
 
