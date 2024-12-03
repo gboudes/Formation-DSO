@@ -31,34 +31,34 @@ python application.py
 
 6) Allez sur le navigateur et dans la barre de navigation tapez "127.0.0.1:5000". Vous devriez tomber sur un site web d'analyse de fichier de configuration 
 
-> :mag: Inspectez le fichier payload.yml. Quelle ligne est intéressante dans ce fichier ? Que fait cette ligne ? Réponse : Permet de preprocess la requête qui upload le fichier.
+> :mag: Inspectez le fichier payload.yml. Quelle ligne est intéressante dans ce fichier ? Que fait cette ligne ? Réponse : Le fichier cache une ligne de code python qui s'exécute sur le serveur et cherche à afficher le directory (arborescence) de l'application.
 
 7) Dans l'onglet "Upload", sélectionnez et upload le fichier "payload.yaml". 
 
-> :mag: Regardez alors votre terminal. Que constatez-vous ? Réponse : Blacklistage du fichier car le mot 'extend' a été trouvé à l'intérieur.
+> :mag: Regardez alors votre terminal. Que constatez-vous ? Réponse : Le fichier a été uploader et on a accès à l'arborescence de l'application dans le terminal.
 
 La commande "dir" s'est exécutée et vous pouvez voir la liste des fichiers et dossiers de votre répertoire. Cela veut donc dire que la vulnérabilité a bien été exploitée.
 Avec CTRL+C il est possible d'arréter l'exécution de l'application dans votre terminal. 
 
 ### III - Investigation
 
-> :mag: Imaginez une attaque exploitant cette vulnérabilité.
+> :mag: Imaginez une attaque exploitant cette vulnérabilité. Réponse : Escalade de privilège
 
-> :mag: Quel pourrait être le niveau de criticité de cette vulnérabilité  ? (LOW/MEDIUM/HIGH/CRITICAL)
+> :mag: Quel pourrait être le niveau de criticité de cette vulnérabilité  ? (LOW/MEDIUM/HIGH/CRITICAL) Réponse : High
 
-> :mag: Quel est le composant vulnérable ?
+> :mag: Quel est le composant vulnérable ? Réponse : La partie upload de l'application lié à la bibliothèque pyyaml==5.3
 
-> :mag: Quel est le nom de la vulnérabilité ? (CVE-XXXX-XXXX)
+> :mag: Quel est le nom de la vulnérabilité ? Réponse : CVE-2020-1747
 
-> :mag: Quel est le niveau réel de criticité de cette vulnérabilité ? D'après vous, pourquoi a-t-elle ce niveau ?
+> :mag: Quel est le niveau réel de criticité de cette vulnérabilité ? D'après vous, pourquoi a-t-elle ce niveau ? Réponse : 9.8 Critical
 
-> :mag: A partir de quelle version cette vulnérabilité est-elle corrigée ?
+> :mag: A partir de quelle version cette vulnérabilité est-elle corrigée ? Réponse : Yaml 5.3.1
 
-> :mag: Qu'est-ce qu'une CWE ?
+> :mag: Qu'est-ce qu'une CWE ? Réponse : Common Weakness Enumeration
 
-> :mag: Quelle est la CWE liée à cette vulnérabilité ?
+> :mag: Quelle est la CWE liée à cette vulnérabilité ? Réponse Improper Input Validation
 
-> :mag: Quelle est la différence entre CWE et CVE ?
+> :mag: Quelle est la différence entre CWE et CVE ? Réponse : CVE = Common Vulnerabilities and Exposures ; list of publicly disclosed computer security flaws and CWE : a community-developed list of common software and hardware weaknesses
 
 
 ### IV - Correction de la vulnérabilité
